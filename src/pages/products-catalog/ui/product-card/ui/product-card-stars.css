@@ -1,0 +1,22 @@
+/* Star Rating Component Styles */
+.star-rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+}
+
+.rating-text {
+  margin-left: 4px;
+  font-size: 0.85rem;
+  color: #666;
+}

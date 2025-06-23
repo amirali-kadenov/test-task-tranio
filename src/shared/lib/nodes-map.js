@@ -16,7 +16,6 @@ export class NodesMap {
 
     const node = document.getElementById(id)
     if (!node) {
-      console.warn(`Node with ID '${id}' not found.`)
       return null
     }
 

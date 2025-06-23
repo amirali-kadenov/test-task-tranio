@@ -1,0 +1,102 @@
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-track {
+  position: relative;
+  height: 4px;
+  background: var(--border-primary);
+  border-radius: var(--radius-sm);
+}
+
+.slider-range {
+  position: absolute;
+  height: 100%;
+  background: var(--primary);
+  border-radius: var(--radius-sm);
+}
+
+.slider-input {
+  position: absolute;
+  top: -8px;
+  width: 100%;
+  height: 20px;
+  appearance: none;
+  pointer-events: none;
+  background: transparent;
+}
+
+.slider-input::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  pointer-events: auto;
+  cursor: pointer;
+  background: var(--primary);
+  border: 3px solid var(--bg-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-fast);
+}
+
+.slider-input::-webkit-slider-thumb:hover {
+  background: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+.slider-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  pointer-events: auto;
+  cursor: pointer;
+  background: var(--primary);
+  border: 3px solid var(--bg-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-fast);
+}
+
+.slider-input::-moz-range-thumb:hover {
+  background: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+.slider-input:focus {
+  outline: none;
+}
+
+.price-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-input {
+  width: 130px;
+  padding: var(--space-lg) var(--space-md);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+}
+
+.price-input:focus {
+  outline: none;
+  background: var(--bg-primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 10%);
+}
+
+.price-input:hover {
+  border-color: var(--border-secondary);
+}
+
+.price-separator {
+  margin: 0 var(--space-md);
+  font-size: 18px;
+  color: var(--text-muted);
+}

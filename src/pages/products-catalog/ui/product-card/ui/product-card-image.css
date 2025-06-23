@@ -1,0 +1,22 @@
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.product-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05) translate(-50%, -50%);
+}
